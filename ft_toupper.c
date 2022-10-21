@@ -6,16 +6,15 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 07:15:00 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/14 08:36:27 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:20:33 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 97 && c <= 122 )
+	if (c >= 97 && c <= 122)
 		c -= 32;
 	return (c);
 }
-

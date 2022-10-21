@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/20 11:22:24 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/20 13:43:09 by aaouassa         ###   ########.fr       */
+/*   Created: 2022/10/18 14:55:55 by aaouassa          #+#    #+#             */
+/*   Updated: 2022/10/18 15:07:09 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(j + '0', fd);
 	}
 }
-

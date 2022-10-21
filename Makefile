@@ -6,7 +6,7 @@
 #    By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/13 20:40:23 by aaouassa          #+#    #+#              #
-#    Updated: 2022/10/20 13:42:59 by aaouassa         ###   ########.fr        #
+#    Updated: 2022/10/20 10:31:14 by aaouassa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,13 +35,15 @@ SRC =   ft_isalnum.c      \
         ft_atoi.c         \
         ft_calloc.c       \
         ft_strdup.c       \
-        ft_strjoin.c      \
         ft_substr.c       \
+        ft_strjoin.c      \
         ft_strlcat.c      \
         ft_putchar_fd.c   \
         ft_putstr_fd.c    \
+        ft_putnbr_fd.c    \
         ft_putendl_fd.c   \
-        ft_putnbr_fd.c
+        ft_strmapi.c
+
 GCC = gcc
 
 FLAGS = -Wall -Wextra -Werror

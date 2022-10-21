@@ -6,7 +6,7 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:23:18 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/14 08:31:41 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/19 09:44:37 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s1)
 	i = 0;
 	while (s1[i] != '\0')
 		i++;
-	copy =(char *)malloc(sizeof(char) * (i + 1));
+	copy = (char *)malloc(sizeof(char) * (i + 1));
 	if (!(copy))
 		return (NULL);
 	i = 0;

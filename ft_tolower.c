@@ -6,13 +6,13 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 20:09:39 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/14 08:36:33 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:20:04 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		c += 32;

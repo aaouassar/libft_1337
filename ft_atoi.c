@@ -6,15 +6,18 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:52:10 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/20 11:32:27 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:24:37 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+#include "libft.h"
+
 int	ft_atoi(const char *str)
 {
-	unsigned int	i;
-	int				neg;
-	int				rst;
+	int	i;
+	int	neg;
+	int	rst;
 
 	i = 0;
 	neg = 1;
@@ -30,9 +33,11 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
-	{
+	{	
 		rst = (rst * 10) + (str[i] - '0');
 		i++;
-	}
+	}	
 	return (neg * rst);
 }
+
+ 

@@ -6,13 +6,13 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 16:19:50 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/14 08:32:15 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:13:40 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-size_t	ft_strlen(const	char	*s)
+size_t	ft_strlen(const	char *s)
 {
 	int	i;
 
