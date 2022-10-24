@@ -6,10 +6,9 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:52:10 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/19 14:24:37 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/24 00:42:22 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -28,8 +27,8 @@ int	ft_atoi(const char *str)
 	}
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == '-')
-			neg *= -1;
+		if (i[str] == '-')
+			neg = neg * (-1);
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
@@ -39,5 +38,3 @@ int	ft_atoi(const char *str)
 	}	
 	return (neg * rst);
 }
-
- 

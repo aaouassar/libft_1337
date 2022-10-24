@@ -6,7 +6,7 @@
 #    By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/13 20:40:23 by aaouassa          #+#    #+#              #
-#    Updated: 2022/10/20 10:31:14 by aaouassa         ###   ########.fr        #
+#    Updated: 2022/10/24 05:04:57 by aaouassa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,10 @@ SRC =   ft_isalnum.c      \
         ft_putstr_fd.c    \
         ft_putnbr_fd.c    \
         ft_putendl_fd.c   \
-        ft_strmapi.c
+        ft_strmapi.c      \
+        ft_striteri.c     \
+        ft_strtrim.c      \
+        ft_itoa.c
 
 GCC = gcc
 
