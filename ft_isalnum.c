@@ -6,7 +6,7 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:22:42 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/18 16:44:39 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/27 17:31:52 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
+	char c1;
+
+	c1 = (unsigned char)c;
+	if (ft_isalpha(c1) || ft_isdigit(c1))
 		return (1);
 	return (0);
 }

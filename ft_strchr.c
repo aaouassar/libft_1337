@@ -6,7 +6,7 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 09:45:55 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/19 09:46:23 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/27 18:01:14 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	int		i;
 	char	c1;
 
-	c1 = (unsigned char)c;
+	c1 = (char)c;
 	i = 0;
 	while (s[i] != '\0')
 	{

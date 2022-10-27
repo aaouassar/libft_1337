@@ -6,7 +6,7 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 04:56:21 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/24 10:17:13 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/25 14:11:36 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,21 +29,14 @@ size_t	get_len(int n)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+void	ft_cnvrt(char *s, long long int n, size_t len)
 {
-	size_t	len;
 	size_t	i;
-	char	*result;
 
-	len = get_len(n);
-	result = (char *)malloc(len + 1);
-	if (!result)
-		return (NULL);
-	result[len] = '\0';
 	if (n < 0)
 	{
 		n *= -1;
-		result[0] = '-';
+		s[0] = '-';
 		i = 1;
 	}
 	else
@@ -52,20 +45,27 @@ char	*ft_itoa(int n)
 	{
 		if (n < 0)
 		{
-			result[len] = '0' + n % 10;
+			s[len] = '0' + n % 10;
 			n = n / 10;
 		}
 		else
 		{
-			result[len] = '0' + n % 10;
+			s[len] = '0' + n % 10;
 			n = n / 10;
 		}
 	}
-	return (result);
 }
-signe = 1;
-    if (nb < 0)
-    {
-      signe *= -1;
-      nb *= -1;
-    } 
+
+char	*ft_itoa(int n)
+{
+	size_t			len;
+	char			*rslt;
+
+	len = get_len(n);
+	rslt = (char *)malloc(len + 1);
+	if (!rslt)
+		return (NULL);
+	rslt[len] = '\0';
+	ft_cnvrt(rslt, n, len);
+	return (rslt);
+}

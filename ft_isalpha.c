@@ -6,13 +6,16 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:40:17 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/19 09:26:35 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/27 17:33:29 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	char c1;
+
+	c1 = (unsigned char)c;
+	if ((c1 >= 65 && c1 <= 90) || (c1 >= 97 && c1 <= 122))
 		return (1);
 	return (0);
 }
