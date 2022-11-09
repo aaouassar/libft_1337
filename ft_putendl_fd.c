@@ -6,7 +6,7 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 15:40:51 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/19 09:37:31 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/30 20:23:59 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{

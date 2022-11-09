@@ -6,13 +6,13 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 04:56:21 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/25 14:11:36 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:03:37 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	get_len(int n)
+static size_t	get_len(int n)
 {
 	size_t	len;
 
@@ -29,30 +29,21 @@ size_t	get_len(int n)
 	return (len);
 }
 
-void	ft_cnvrt(char *s, long long int n, size_t len)
+static void	ft_cnvrt(char *s, long long int n, size_t len)
 {
 	size_t	i;
 
+	i = 0;
 	if (n < 0)
 	{
 		n *= -1;
 		s[0] = '-';
 		i = 1;
 	}
-	else
-		i = 0;
 	while (len-- > i)
 	{
-		if (n < 0)
-		{
-			s[len] = '0' + n % 10;
-			n = n / 10;
-		}
-		else
-		{
-			s[len] = '0' + n % 10;
-			n = n / 10;
-		}
+		s[len] = n % 10 + 48;
+		n = n / 10;
 	}
 }
 

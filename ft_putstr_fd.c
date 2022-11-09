@@ -6,7 +6,7 @@
 /*   By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:43:33 by aaouassa          #+#    #+#             */
-/*   Updated: 2022/10/19 09:38:37 by aaouassa         ###   ########.fr       */
+/*   Updated: 2022/10/30 20:24:25 by aaouassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s != '\0')
 	{
 		write(fd, s, 1);

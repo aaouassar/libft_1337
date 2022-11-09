@@ -1,17 +1,11 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: aaouassa <aaouassa@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/10/13 20:40:23 by aaouassa          #+#    #+#              #
-#    Updated: 2022/10/25 18:30:05 by aaouassa         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 
 NAME = libft.a
+
+CFLAGS = -Wall -Wextra -Werror
+
+RM = rm -f
+
+LIB = ar -rc
 
 SRC =   ft_isalnum.c      \
         ft_isalpha.c      \
@@ -45,18 +39,10 @@ SRC =   ft_isalnum.c      \
         ft_strmapi.c      \
         ft_striteri.c     \
         ft_strtrim.c      \
-        ft_itoa.c   \
+        ft_itoa.c         \
         ft_split.c
 
-GCC = gcc
-
-FLAGS = -Wall -Wextra -Werror
-
 OBJS = $(SRC:.c=.o)
-
-RM = rm -f
-
-LIB = ar -rcs
 
 all : $(NAME)
 
@@ -65,9 +51,6 @@ $(NAME) : $(OBJS)
 
 clean : 
 	$(RM) $(OBJS)
-
-.c.o : 
-	$(GCC) $(FLAGS) -c $<
 
 fclean : clean
 	$(RM) $(NAME)
